@@ -1,0 +1,88 @@
+.towImg {
+    width: 97%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin: 20px auto;
+    position: relative;
+  }
+  
+  .firstimg {
+    width: 49%;
+  }
+  
+  .firstimg img {
+    width: 100%;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+  }
+  
+  div.firstimg>div.new1>p {
+    position: absolute;
+    z-index: 2;
+    color: whitesmoke;
+    font-family: yekan;
+    font-size: 12px;
+    padding: 2px 8px;
+    box-sizing: border-box;
+    background-color: rgb(222, 0, 0);
+    border-radius: 2px;
+  }
+  .firsttext {
+    height: 256px;
+    position: relative;
+    background-color: rgb(26, 28, 35);
+    padding: 30px;
+    padding-bottom: 50px;
+    margin-top: -4px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    transition: 300ms;
+  }
+ 
+  .firsttext:hover{
+    background-color: #313339;
+  }
+  .dd {
+    display: flex;
+  }
+  .dd img {
+    width: 5%;
+  }
+  .dd p {
+    color: rgba(236, 236, 236, 0.8);
+    margin-top: 5px;
+    font-family: yekan;
+  }
+ 
+  .firsttext .p1 h2 {
+    color: rgba(255, 255, 255, 0.84);
+    margin-top: 5px;
+    font-size: 24px;
+    font-family: yekan;
+  }
+
+  .firsttext .p2 h3 {
+    color: rgb(255, 180, 0);
+    margin-top: 5px;
+    font-size: 16px;
+    font-family: yekan;
+  }
+
+  .firsttext .p3 h3 {
+    color: rgba(255, 255, 255, 0.72);
+    margin-top: 5px;
+    font-size: 14px;
+    font-family: yekan;
+  }
+ 
+  .firsttext .p4 h2 {
+    color: rgba(255, 255, 255, 0.84);
+    margin-top: 5px;
+    font-size: 24px;
+    font-family: yekan;
+    position: absolute;
+    bottom: 30px;
+  }
+
+  

@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./public/css/main.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./node_modules/swiper/swiper-bundle.min.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- header -->
+      <div class="menu">
+        <div class="imgmenu">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="currentColor"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="0"
+            aria-labelledby="blz-icon-title-battlenet-logo"
+            viewBox="0 0 196 32"
+            part="icon blz-icon"
+          >
+            <title id="blz-icon-title-battlenet-logo">Battle.net</title>
+            <path
+              fill="#148EFF"
+              stroke="none"
+              d="M26.193 11.848c.895-2.755 1.063-5.267.453-7.17l-.017-.054c-.037-.103-.128-.321-.243-.321-.088 0-.089.146-.084.22l.006.043c.194 1.7-.326 4.124-1.371 6.663-2.143-.973-4.717-1.75-7.573-2.208-2.566-.413-5.023-.504-7.25-.322.264-1.752.919-2.971 1.993-3.229 1.478-.353 3.09.619 4.627 2.388a34.717 34.717 0 0 1 3.032.552c-2.803-5.272-6.562-8.227-9.421-7.136-2.176.83-3.287 3.823-3.155 7.846-2.833.603-5.093 1.713-6.436 3.193l-.037.041c-.072.084-.215.272-.157.372.043.075.17.003.233-.038l.034-.026c1.375-1.018 3.735-1.78 6.456-2.145.229 2.343.843 4.96 1.873 7.662.926 2.429 2.076 4.602 3.348 6.44-1.65.648-3.034.69-3.793-.111-1.046-1.103-1.01-2.985-.246-5.202a34.626 34.626 0 0 1-1.038-2.901c-3.165 5.063-3.844 9.796-1.47 11.727 1.806 1.47 4.955.935 8.372-1.19 1.939 2.152 4.03 3.554 5.983 3.977l.055.012c.108.02.342.05.4-.05.044-.076-.082-.15-.149-.183a3.123 3.123 0 0 1-.04-.017c-1.569-.681-3.409-2.344-5.085-4.518 1.914-1.37 3.874-3.21 5.699-5.454 1.64-2.016 2.947-4.098 3.904-6.119 1.385 1.106 2.113 2.282 1.8 3.34-.433 1.458-2.08 2.368-4.382 2.814a34.57 34.57 0 0 1-1.994 2.35c5.967.21 10.405-1.57 10.89-4.59.37-2.3-1.667-4.759-5.217-6.656Zm-5.183 6.026c-2.104 2.587-4.727 4.789-7.06 6.062a26.423 26.423 0 0 1-2.248-4.496c-1.188-3.116-1.784-6.489-1.72-9.146a26.42 26.42 0 0 1 5.018.301c3.292.53 6.511 1.7 8.78 3.083a26.4 26.4 0 0 1-2.77 4.196Z"
+            ></path>
+            <path
+              stroke="none"
+              d="M75.328 22.603 68.972 9.915a1.858 1.858 0 0 0-1.638-1.002h-3.3c-.685 0-1.32.391-1.638 1.002l-6.307 12.688c-.123.22.048.489.293.489h2.836a.446.446 0 0 0 .415-.244l1.394-2.787h9.362l1.394 2.787c.073.17.22.244.415.244h2.836c.22 0 .367-.269.294-.489ZM62.42 17.249l2.64-5.304a.381.381 0 0 1 .318-.196h.66c.147 0 .269.073.318.195l2.64 5.305H62.42Zm133.256-7.994v2.152a.35.35 0 0 1-.343.342h-5.72v12.859a.24.24 0 0 1-.391.195l-2.836-2.42a.99.99 0 0 1-.342-.733v-9.901h-4.596a.696.696 0 0 1-.611-.391l-1.1-2.2c-.049-.123.024-.245.146-.245h15.401c.22 0 .392.171.392.342Zm-30.68 2.738v2.616h10.438a1.419 1.419 0 0 1 0 2.836h-10.438V19.4c0 .489.415.904.904.904h11.759a.35.35 0 0 1 .342.342V22.8a.368.368 0 0 1-.342.342h-12.712a3.625 3.625 0 0 1-3.618-3.618v-8.776c0-1.003.807-1.81 1.809-1.81h14.521a.35.35 0 0 1 .342.343v2.151a.368.368 0 0 1-.342.342h-12.443c-.147-.024-.22.074-.22.22Zm-6.747-2.64v12.443c0 1.492-1.736 2.323-2.909 1.345l-10.977-9.314v8.85c0 .244-.195.44-.44.44h-2.762c-.245 0-.465-.196-.465-.44v-12.42c0-1.49 1.736-2.322 2.909-1.344l10.977 9.314v-8.85c0-.244.195-.464.44-.464h2.762c.318 0 .465.22.465.44Zm-34.2 2.64v2.616h7.285a1.418 1.418 0 0 1 0 2.836h-7.261V19.4c0 .489.416.904.905.904h11.758a.35.35 0 0 1 .342.342V22.8a.35.35 0 0 1-.342.342h-12.712a3.626 3.626 0 0 1-3.618-3.618v-8.776c0-1.003.807-1.81 1.809-1.81h14.521a.35.35 0 0 1 .342.343v2.151a.35.35 0 0 1-.342.342h-12.443c-.147-.024-.244.074-.244.22Zm-5.183 8.605v2.152a.35.35 0 0 1-.342.342h-10.219a3.626 3.626 0 0 1-3.618-3.618V9.255a.35.35 0 0 1 .343-.342h3.006a.35.35 0 0 1 .343.342v10.097c0 .489.415.904.904.904h9.241c.22 0 .342.171.342.342ZM102.781 9.255v2.152a.35.35 0 0 1-.343.342h-5.329v12.859a.24.24 0 0 1-.391.195l-2.86-2.445a1.002 1.002 0 0 1-.343-.757v-9.876H90.02a.696.696 0 0 1-.611-.392l-1.1-2.2c-.05-.098.024-.22.17-.22h13.959a.35.35 0 0 1 .343.342Zm-50.604 6.6c.66-.244 2.005-.88 2.005-2.688 0-3.105-2.298-4.254-5.036-4.254h-10.56c-.148 0-.343.147-.343.342V22.75a.35.35 0 0 0 .342.342h11.881c1.736-.024 4.23-1.002 4.23-4.205.024-2.004-1.785-2.835-2.519-3.031ZM41.885 11.97c0-.147.098-.22.22-.22h6.503c.684 0 2.176 0 2.176 1.418s-1.516 1.418-2.176 1.418h-6.723V11.97Zm7.505 8.263h-7.285c-.146 0-.22-.098-.22-.22V17.42h7.53c.733 0 1.907 0 1.907 1.418 0 1.443-1.345 1.394-1.932 1.394ZM86.548 9.255v2.152a.35.35 0 0 1-.342.342h-4.18v12.859a.24.24 0 0 1-.391.195l-2.86-2.445a.99.99 0 0 1-.343-.733v-9.9h-4.547a.696.696 0 0 1-.61-.392l-1.1-2.2c-.025-.098.048-.22.17-.22h13.861c.147 0 .342.147.342.342Z"
+            ></path>
+            <path
+              fill="#148EFF"
+              stroke="none"
+              d="M134.805 16.003c0-.978.782-1.785 1.784-1.785.978 0 1.785.807 1.785 1.785 0 .978-.782 1.785-1.785 1.785a1.778 1.778 0 0 1-1.784-1.785Z"
+            ></path>
+            <path
+              stroke="none"
+              d="M192.975 22.187a1.418 1.418 0 1 1-.003-2.837 1.418 1.418 0 0 1 .003 2.837Zm0-2.613a1.197 1.197 0 1 0-.004 2.398 1.197 1.197 0 0 0 .004-2.4v.002Zm.363 2.014-.5-.673h-.173v.673h-.283v-1.634h.586c.425 0 .611.138.611.46a.443.443 0 0 1-.437.477l.545.693-.349.004Zm-.141-1.376a.67.67 0 0 0-.269-.037h-.263v.542h.263c.251 0 .372-.093.372-.294a.237.237 0 0 0-.103-.212v.002Z"
+            ></path>
+          </svg>
+        </div>
+      <div class="ham"> 
+        <a href="#" class="left"><i class="fa-solid fa-bars" style="color: white;"></i>
+        </a>
+       <div class="submenu">
+        <div class="close">&times;</div>
+        <div class="imgmenu">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="currentColor"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="0"
+            aria-labelledby="blz-icon-title-battlenet-logo"
+            viewBox="0 0 196 32"
+            part="icon blz-icon"
+          >
+            <title id="blz-icon-title-battlenet-logo">Battle.net</title>
+            <path
+              fill="#148EFF"
+              stroke="none"
+              d="M26.193 11.848c.895-2.755 1.063-5.267.453-7.17l-.017-.054c-.037-.103-.128-.321-.243-.321-.088 0-.089.146-.084.22l.006.043c.194 1.7-.326 4.124-1.371 6.663-2.143-.973-4.717-1.75-7.573-2.208-2.566-.413-5.023-.504-7.25-.322.264-1.752.919-2.971 1.993-3.229 1.478-.353 3.09.619 4.627 2.388a34.717 34.717 0 0 1 3.032.552c-2.803-5.272-6.562-8.227-9.421-7.136-2.176.83-3.287 3.823-3.155 7.846-2.833.603-5.093 1.713-6.436 3.193l-.037.041c-.072.084-.215.272-.157.372.043.075.17.003.233-.038l.034-.026c1.375-1.018 3.735-1.78 6.456-2.145.229 2.343.843 4.96 1.873 7.662.926 2.429 2.076 4.602 3.348 6.44-1.65.648-3.034.69-3.793-.111-1.046-1.103-1.01-2.985-.246-5.202a34.626 34.626 0 0 1-1.038-2.901c-3.165 5.063-3.844 9.796-1.47 11.727 1.806 1.47 4.955.935 8.372-1.19 1.939 2.152 4.03 3.554 5.983 3.977l.055.012c.108.02.342.05.4-.05.044-.076-.082-.15-.149-.183a3.123 3.123 0 0 1-.04-.017c-1.569-.681-3.409-2.344-5.085-4.518 1.914-1.37 3.874-3.21 5.699-5.454 1.64-2.016 2.947-4.098 3.904-6.119 1.385 1.106 2.113 2.282 1.8 3.34-.433 1.458-2.08 2.368-4.382 2.814a34.57 34.57 0 0 1-1.994 2.35c5.967.21 10.405-1.57 10.89-4.59.37-2.3-1.667-4.759-5.217-6.656Zm-5.183 6.026c-2.104 2.587-4.727 4.789-7.06 6.062a26.423 26.423 0 0 1-2.248-4.496c-1.188-3.116-1.784-6.489-1.72-9.146a26.42 26.42 0 0 1 5.018.301c3.292.53 6.511 1.7 8.78 3.083a26.4 26.4 0 0 1-2.77 4.196Z"
+            ></path>
+            <path
+              stroke="none"
+              d="M75.328 22.603 68.972 9.915a1.858 1.858 0 0 0-1.638-1.002h-3.3c-.685 0-1.32.391-1.638 1.002l-6.307 12.688c-.123.22.048.489.293.489h2.836a.446.446 0 0 0 .415-.244l1.394-2.787h9.362l1.394 2.787c.073.17.22.244.415.244h2.836c.22 0 .367-.269.294-.489ZM62.42 17.249l2.64-5.304a.381.381 0 0 1 .318-.196h.66c.147 0 .269.073.318.195l2.64 5.305H62.42Zm133.256-7.994v2.152a.35.35 0 0 1-.343.342h-5.72v12.859a.24.24 0 0 1-.391.195l-2.836-2.42a.99.99 0 0 1-.342-.733v-9.901h-4.596a.696.696 0 0 1-.611-.391l-1.1-2.2c-.049-.123.024-.245.146-.245h15.401c.22 0 .392.171.392.342Zm-30.68 2.738v2.616h10.438a1.419 1.419 0 0 1 0 2.836h-10.438V19.4c0 .489.415.904.904.904h11.759a.35.35 0 0 1 .342.342V22.8a.368.368 0 0 1-.342.342h-12.712a3.625 3.625 0 0 1-3.618-3.618v-8.776c0-1.003.807-1.81 1.809-1.81h14.521a.35.35 0 0 1 .342.343v2.151a.368.368 0 0 1-.342.342h-12.443c-.147-.024-.22.074-.22.22Zm-6.747-2.64v12.443c0 1.492-1.736 2.323-2.909 1.345l-10.977-9.314v8.85c0 .244-.195.44-.44.44h-2.762c-.245 0-.465-.196-.465-.44v-12.42c0-1.49 1.736-2.322 2.909-1.344l10.977 9.314v-8.85c0-.244.195-.464.44-.464h2.762c.318 0 .465.22.465.44Zm-34.2 2.64v2.616h7.285a1.418 1.418 0 0 1 0 2.836h-7.261V19.4c0 .489.416.904.905.904h11.758a.35.35 0 0 1 .342.342V22.8a.35.35 0 0 1-.342.342h-12.712a3.626 3.626 0 0 1-3.618-3.618v-8.776c0-1.003.807-1.81 1.809-1.81h14.521a.35.35 0 0 1 .342.343v2.151a.35.35 0 0 1-.342.342h-12.443c-.147-.024-.244.074-.244.22Zm-5.183 8.605v2.152a.35.35 0 0 1-.342.342h-10.219a3.626 3.626 0 0 1-3.618-3.618V9.255a.35.35 0 0 1 .343-.342h3.006a.35.35 0 0 1 .343.342v10.097c0 .489.415.904.904.904h9.241c.22 0 .342.171.342.342ZM102.781 9.255v2.152a.35.35 0 0 1-.343.342h-5.329v12.859a.24.24 0 0 1-.391.195l-2.86-2.445a1.002 1.002 0 0 1-.343-.757v-9.876H90.02a.696.696 0 0 1-.611-.392l-1.1-2.2c-.05-.098.024-.22.17-.22h13.959a.35.35 0 0 1 .343.342Zm-50.604 6.6c.66-.244 2.005-.88 2.005-2.688 0-3.105-2.298-4.254-5.036-4.254h-10.56c-.148 0-.343.147-.343.342V22.75a.35.35 0 0 0 .342.342h11.881c1.736-.024 4.23-1.002 4.23-4.205.024-2.004-1.785-2.835-2.519-3.031ZM41.885 11.97c0-.147.098-.22.22-.22h6.503c.684 0 2.176 0 2.176 1.418s-1.516 1.418-2.176 1.418h-6.723V11.97Zm7.505 8.263h-7.285c-.146 0-.22-.098-.22-.22V17.42h7.53c.733 0 1.907 0 1.907 1.418 0 1.443-1.345 1.394-1.932 1.394ZM86.548 9.255v2.152a.35.35 0 0 1-.342.342h-4.18v12.859a.24.24 0 0 1-.391.195l-2.86-2.445a.99.99 0 0 1-.343-.733v-9.9h-4.547a.696.696 0 0 1-.61-.392l-1.1-2.2c-.025-.098.048-.22.17-.22h13.861c.147 0 .342.147.342.342Z"
+            ></path>
+            <path
+              fill="#148EFF"
+              stroke="none"
+              d="M134.805 16.003c0-.978.782-1.785 1.784-1.785.978 0 1.785.807 1.785 1.785 0 .978-.782 1.785-1.785 1.785a1.778 1.778 0 0 1-1.784-1.785Z"
+            ></path>
+            <path
+              stroke="none"
+              d="M192.975 22.187a1.418 1.418 0 1 1-.003-2.837 1.418 1.418 0 0 1 .003 2.837Zm0-2.613a1.197 1.197 0 1 0-.004 2.398 1.197 1.197 0 0 0 .004-2.4v.002Zm.363 2.014-.5-.673h-.173v.673h-.283v-1.634h.586c.425 0 .611.138.611.46a.443.443 0 0 1-.437.477l.545.693-.349.004Zm-.141-1.376a.67.67 0 0 0-.269-.037h-.263v.542h.263c.251 0 .372-.093.372-.294a.237.237 0 0 0-.103-.212v.002Z"
+            ></path>
+          </svg>
+        </div>
+        <div class="ab"><a href="#">Warcraft</a></div>
+        <div class="ab"><a href="#">Call of Duty</a></div>
+        <div class="ab"><a href="#">Diablo</a></div>
+        <div class="ab"><a href="#">Overwatch</a></div>
+        <div class="ab"><a href="#">StarCraft</a></div>
+        <div class="ab"><a href="#">Other</a></div>
+        <div class="abc">
+          <div class="bc">
+            <a href="#">Black Friday Sale</a>
+          <a href="#">Battle.net Balance </a>
+          </div>
+        </div>
+       </div>
+      </div>
+        <nav>
+          <ul class="nav-bar"></ul>
+        </nav>
+      </div>
+      <div class="menu2">
+        <div class="first">
+          <nav>
+            <ul class="navbar"></ul>
+          </nav>
+        </div>
+        <div class="second"><i class="fa-solid fa-magnifying-glass"></i></div>
+        <div class="third"><a href="#">Battle.net Balance</a></div>
+      </div>
+      <!-- end header -->
+      <!-- Swiper -->
+      <div class="slide">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+
+          </div>
+          <div class="next">
+            <div class="swiper-button-next"></div>
+          </div>
+          <div class="back">
+            <div class="swiper-button-prev"></div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+
+      <!-- end Swiper -->
+      <div class="test">
+        <h2>New content for you</h2>
+      </div>
+      <!-- tow image -->
+      <div class="towImg">        
+      </div>
+      <!-- end tow image -->
+      <!-- three image -->
+      <div class="threeimage">
+      </div>
+      <!-- end three image -->
+      <div class="test">
+        <h2>Recommended</h2>
+      </div>
+      <!--first group -->
+     <div class="firstGroup">
+       <div class="ch1">
+        <div class="child1"></div>
+        <div class="child1"></div>
+        <div class="child1"></div>
+        <div class="child1"></div>
+
+       </div>
+      <div class="ch2">
+        <div class="child1"></div>
+        <div class="child1"></div>
+        <div class="child1"></div>
+        <div class="child1"></div>
+
+      </div>
+     </div>
+      <!-- end first group -->
+      <div class="ts">
+        <h2>Updates for your favorite games</h2>
+      </div>
+      <!-- swiper2 -->
+      <div class="swiper2">
+        <input type="radio" name="status" id="show" class="peer/show" />
+        <label class="stylemode" for="show">WoW: Cataclysm Classic</label>
+
+        <input type="radio" name="status" id="show1" class="peer/show1" />
+        <label class="stylemode1" for="show1">WoW: The War Within</label>
+
+        <input type="radio" name="status" id="show2" class="peer/show2" />
+        <label class="stylemode2" for="show2">Vault Edition</label>
+
+        <input type="radio" name="status" id="show3" class="peer/show3" />
+        <label class="stylemode3" for="show3">Showdown in the Badlands</label>
+
+        <input type="radio" name="status" id="show4" class="peer/show4" />
+        <label class="stylemode4" for="show4">Play Warcraft Rumble</label>
+
+        <div class="slide1">
+          <img src="/public/swiper2/ax1.avif" alt="" />
+          <div class="textslide">
+            <div class="dg">
+              <img
+                src="https://blz-contentstack-images.akamaized.net/v3/assets/bltf408a0557f4e4998/bltfc0228492a2cda74/6545583cade0dc70152ca5b4/WoW_Classic_Cata(Exp).svg"
+                alt=""
+              />
+              <p>A new age of Cataclysm</p>
+            </div>
+            <h3>
+              You’ve toppled the undead armies of the Lich King and delivered a
+              debilitating blow to Arthas. Now, Deathwing, The World Breaker,
+              bursts from the heart of the Maelstrom to unleash his rage. All
+              will burn beneath the shadow of his wings!
+            </h3>
+            <h4>Key features</h4>
+            <ul>
+              <li>Playable races: Goblins and Worgen</li>
+              <li>Increased level cap</li>
+              <li>Conquer the Elemental Planes</li>
+              <li>New dungeons and raids</li>
+            </ul>
+            <div class="st">
+              <a href="#"> Pre-purchase </a>
+            </div>
+          </div>
+        </div>
+        <div class="slide2">
+          <img src="public/swiper2/ax2.avif" alt="" />
+          <div class="textslide">
+            <div class="dg">
+              <img
+                src="https://blz-contentstack-images.akamaized.net/v3/assets/bltf408a0557f4e4998/bltb7c1db49cad77069/60a81b45b078b00d8a909fce/world-of-warcraft.svg"
+                alt=""
+              />
+              <p>Descend into the depths of Azeroth</p>
+            </div>
+            <h3>
+              In the dark depths of the nerubian empire, the malicious Harbinger
+              of the Void is gathering arachnid forces to bring Azeroth to its
+              knees. Journey through never-before-seen subterranean worlds
+              filled with hidden wonders and lurking perils, and fight to save
+              Azeroth from this new threat in The War Within.
+            </h3>
+            <h4>Key features</h4>
+            <ul>
+              <li>
+                New lands: Explore Khaz Algar, the Ringing Depths, Hallowfall,
+                and more!
+              </li>
+              <li>New endgame pillar: Delves</li>
+              <li>New playable race: Earthen</li>
+              <li>New class feature: Hero Talents</li>
+            </ul>
+            <div class="st">
+              <a href="#"> Pre-purchase Now </a>
+            </div>
+          </div>
+        </div>
+        <div class="slide3">
+          <img src="public/swiper2/ax3.avif" alt="" />
+          <div class="textslide">
+            <div class="dg">
+              <img
+                src="https://blz-contentstack-images.akamaized.net/v3/assets/bltf408a0557f4e4998/blt8168cbdbbc05770d/64cc38e2c45759d767a1f84f/Jupiter_Coming_Soon-Bnet_Game-Icon_Shop-EN-Vector-01.svg"
+                alt=""
+              />
+              <p>The war has changed</p>
+            </div>
+            <h3>
+              In the direct sequel to the record-breaking Call of Duty®: Modern
+              Warfare® II, Captain Price and Task Force 141 face off against the
+              ultimate threat. The ultranationalist war criminal Vladimir
+              Makarov is extending his grasp across the world causing Task Force
+              141 to fight like never before.
+            </h3>
+            <div class="st">
+              <a href="#"> Pre-purchase </a>
+            </div>
+          </div>
+        </div>
+        <div class="slide4">
+          <img src="public/swiper2/ax4.avif" alt="" />
+          <div class="textslide">
+            <div class="dg">
+              <img src="https://blz-contentstack-images.akamaized.net/v3/assets/bltf408a0557f4e4998/blt5538a5cdb0e16552/60db86c967d3385db9b805be/hearthstone.svg" alt="" />
+              <p>Rustle up some cards and start slinging</p>
+            </div>
+            <h3>
+              The dastardly Bloodrock Mining Co. is digging deeper and deeper
+              into Azerite-rich mines, tainting the Badlands. It's up to you to
+              stop them... or join them! Rally your riding posse and find your
+              riches with the Showdown in the Badlands Mega Bundle
+              (Pre-Purchase), including 80 packs, 10 Golden packs, 1 Signature
+              Legendary card, and 1 Golden Legendary card from Showdown in the
+              Badlands; Ulfar Druid Hero Skin and Card Back; and 20 Showdown in
+              the Badlands Catch-Up Packs!
+            </h3>
+            <div class="st">
+              <a href="#"> Buy Now </a>
+            </div>
+          </div>
+        </div>
+        <div class="slide5">
+          <img src="public/swiper2/ax5.avif" alt="" />
+          <div class="textslide">
+            <div class="dg">
+              <img
+                src="https://blz-contentstack-images.akamaized.net/v3/assets/bltf408a0557f4e4998/bltbab8fa67f2c9cb2e/63c9a73673dc3f13ebc9a8e1/WarcraftArclightRumble_Color_JL01.svg"
+                alt=""
+              />
+              <p>Warcraft Rumble available now!</p>
+            </div>
+            <h3>
+              Join us in celebrating the official launch of Warcraft Rumble, a
+              mobile action strategy game set within the Warcraft universe where
+              collectible Minis come to life to battle in frantic melee
+              skirmishes
+              <br />
+              <br />
+              Assemble your team and play in multiple modes, including the
+              expansive single-player campaign,or challenge others in
+              epichead-to-head PvP battles. Experience the true meaning of
+              joyful chaos with Warcraft Rumble, free to play and available now
+              on Android and Apple iOS
+              <br />
+              <br />
+              Bonus<span>!&nbsp;</span>Play through the tutorial within the
+              first two weeks of launch to earn pre-registration rewards
+              in-game, including a Mecha Kobold Skin, Mecha Kobold Portrait,
+              Mecha Tower Skin, and the Mecha Kobold Emote<span>!&nbsp; </span>
+            </h3>
+            <div class="st">
+              <a href="#"> Download Now </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end swiper2 -->
+      <div class="test">
+        <h2>Featured</h2>
+      </div>
+      <!-- second group -->
+      <div class="secondGroup">
+        <div class="ch3">
+        
+        </div>
+        <div class="ch4">
+          
+        </div>
+      </div>
+      <!-- end second group -->
+      <div class="test">
+        <h2>Trending Now</h2>
+      </div>
+      <!-- third group -->
+      <div class="thirdGroup">
+        <div class="ch5">
+          
+        </div>
+        <div class="ch6">
+         
+        </div>
+      </div> 
+      <!-- end third group -->
+      <div class="test">
+        <h2>Most Gifted</h2>
+      </div>
+      <!-- forth group -->
+      <div class="forthGroup">
+        <div class="ch7">
+        
+        </div>
+        <div class="ch8">
+         
+        </div>
+      </div>
+      <!-- end forth group -->
+      <!-- laptop -->
+      <div class="footerimg">
+        <img class="ft" src="./images/footerimg/mobile-bg-lg_3.avif" alt="" />
+        <div class="ah">
+          <div class="al">
+            <img
+              class="mm"
+              src="./images/footerimg/laptop-optimized.avif"
+              alt=""
+            />
+          </div>
+          <div class="te">
+            <h3>Dive into adventure</h3>
+            <p>Download Battle.net and join a community of millions.</p>
+            <div class="as">
+              <div class="a1">
+                <a href="#"
+                  ><i class="fa-brands fa-windows"></i>Download for Windows
+                </a>
+              </div>
+              <div class="a2">
+                <a href="#">Learn More</a>
+              </div>
+            </div>
+            <div class="ak">
+              <p>
+                Also available for
+                <span><a href="#">Mac</a></span>
+                and <span><a href="#">mobile</a></span>
+              </p>
+            </div>
+            <div class="ff">
+              <img
+              class="fd"
+              src="./images/footerimg/laptop-optimized.avif"
+              alt=""
+            />
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end laptop -->
+      <div class="footer">
+        <div class="t1">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            viewBox="0 0 64 64"
+            width="16px"
+            focusable="false"
+            aria-hidden="true"
+            fill="rgb(102, 196, 255)"
+          >
+            <g>
+              <path
+                d="M32,7.448C18.461,7.448,7.449,18.462,7.449,32c0,13.538,11.013,24.552,24.551,24.552   c13.538,0,24.551-11.014,24.551-24.552C56.551,18.462,45.538,7.448,32,7.448z M39.68,45.697v-5.55h1.261v5.55H39.68z M53.235,32   c0,0.351-0.036,0.694-0.053,1.041l-0.41-0.41l-3.152,3.152l-3.082-3.082h-2.601l-0.963,0.961l-4.557-4.556v-2.153h-4.438   l-2.544-2.544l-3.129,3.13h3.349l1.306,1.306H36.6l5.904,5.904v1.87l-3.528,3.528v5.746l-4.292,4.292h-1.794l-2.765-2.764v-7.469   l-1.939-1.941h-3.104l-3.201-3.199v-3.491l4.509-3.782v-4.123l7.275-7.273l2.182,2.182h5.044l3.525-3.525   C49.751,18.657,53.235,24.914,53.235,32z M18.312,15.778c0.73-0.616,1.506-1.176,2.316-1.69h9.044l-4.511,4.51h-2.989l-2.12,2.12   h-1.74V15.778z M15.335,18.865v4.212l-3.965,3.965C12.097,24.011,13.465,21.235,15.335,18.865z M10.865,33.997l9.417,7.119v3.492   l-2.803,2.859C13.811,44.021,11.36,39.299,10.865,33.997z"
+              ></path>
+            </g>
+          </svg>
+          <p>English (US)</p>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            viewBox="0 0 64 64"
+            width="16px"
+            focusable="false"
+            aria-hidden="true"
+            fill="rgba(255, 255, 255, 0.5)"
+          >
+            <g>
+              <path
+                d="M32.027,9.583L32.027,9.583c0.873,0,1.702,0.38,2.272,1.041l12.264,11.78 c1.082,1.255,0.942,3.149-0.313,4.231c-1.254,1.083-3.149,0.941-4.231-0.313l-9.993-9.146L22,26.375 c-1.081,1.255-2.976,1.396-4.231,0.312c-1.255-1.082-1.395-2.977-0.312-4.231l12.298-11.832 C30.325,9.963,31.154,9.583,32.027,9.583z"
+              ></path>
+              <path
+                d="M31.992,54.166L31.992,54.166c-0.873,0-1.702-0.38-2.272-1.041l-12.264-11.78 c-1.082-1.255-0.942-3.149,0.313-4.231c1.254-1.083,3.149-0.941,4.231,0.313l9.993,9.146l10.026-9.198 c1.081-1.255,2.976-1.396,4.231-0.312c1.255,1.082,1.395,2.977,0.312,4.231L34.264,53.125 C33.694,53.786,32.865,54.166,31.992,54.166z"
+              ></path>
+            </g>
+          </svg>
+        </div>
+        <div class="am">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="currentColor"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="0"
+            aria-labelledby="blz-icon-title-battlenet-logo"
+            viewBox="0 0 196 32"
+            part="icon blz-icon"
+          >
+            <title id="blz-icon-title-battlenet-logo">Battle.net</title>
+            <path
+              fill="#148EFF"
+              stroke="none"
+              d="M26.193 11.848c.895-2.755 1.063-5.267.453-7.17l-.017-.054c-.037-.103-.128-.321-.243-.321-.088 0-.089.146-.084.22l.006.043c.194 1.7-.326 4.124-1.371 6.663-2.143-.973-4.717-1.75-7.573-2.208-2.566-.413-5.023-.504-7.25-.322.264-1.752.919-2.971 1.993-3.229 1.478-.353 3.09.619 4.627 2.388a34.717 34.717 0 0 1 3.032.552c-2.803-5.272-6.562-8.227-9.421-7.136-2.176.83-3.287 3.823-3.155 7.846-2.833.603-5.093 1.713-6.436 3.193l-.037.041c-.072.084-.215.272-.157.372.043.075.17.003.233-.038l.034-.026c1.375-1.018 3.735-1.78 6.456-2.145.229 2.343.843 4.96 1.873 7.662.926 2.429 2.076 4.602 3.348 6.44-1.65.648-3.034.69-3.793-.111-1.046-1.103-1.01-2.985-.246-5.202a34.626 34.626 0 0 1-1.038-2.901c-3.165 5.063-3.844 9.796-1.47 11.727 1.806 1.47 4.955.935 8.372-1.19 1.939 2.152 4.03 3.554 5.983 3.977l.055.012c.108.02.342.05.4-.05.044-.076-.082-.15-.149-.183a3.123 3.123 0 0 1-.04-.017c-1.569-.681-3.409-2.344-5.085-4.518 1.914-1.37 3.874-3.21 5.699-5.454 1.64-2.016 2.947-4.098 3.904-6.119 1.385 1.106 2.113 2.282 1.8 3.34-.433 1.458-2.08 2.368-4.382 2.814a34.57 34.57 0 0 1-1.994 2.35c5.967.21 10.405-1.57 10.89-4.59.37-2.3-1.667-4.759-5.217-6.656Zm-5.183 6.026c-2.104 2.587-4.727 4.789-7.06 6.062a26.423 26.423 0 0 1-2.248-4.496c-1.188-3.116-1.784-6.489-1.72-9.146a26.42 26.42 0 0 1 5.018.301c3.292.53 6.511 1.7 8.78 3.083a26.4 26.4 0 0 1-2.77 4.196Z"
+            ></path>
+            <path
+              stroke="none"
+              d="M75.328 22.603 68.972 9.915a1.858 1.858 0 0 0-1.638-1.002h-3.3c-.685 0-1.32.391-1.638 1.002l-6.307 12.688c-.123.22.048.489.293.489h2.836a.446.446 0 0 0 .415-.244l1.394-2.787h9.362l1.394 2.787c.073.17.22.244.415.244h2.836c.22 0 .367-.269.294-.489ZM62.42 17.249l2.64-5.304a.381.381 0 0 1 .318-.196h.66c.147 0 .269.073.318.195l2.64 5.305H62.42Zm133.256-7.994v2.152a.35.35 0 0 1-.343.342h-5.72v12.859a.24.24 0 0 1-.391.195l-2.836-2.42a.99.99 0 0 1-.342-.733v-9.901h-4.596a.696.696 0 0 1-.611-.391l-1.1-2.2c-.049-.123.024-.245.146-.245h15.401c.22 0 .392.171.392.342Zm-30.68 2.738v2.616h10.438a1.419 1.419 0 0 1 0 2.836h-10.438V19.4c0 .489.415.904.904.904h11.759a.35.35 0 0 1 .342.342V22.8a.368.368 0 0 1-.342.342h-12.712a3.625 3.625 0 0 1-3.618-3.618v-8.776c0-1.003.807-1.81 1.809-1.81h14.521a.35.35 0 0 1 .342.343v2.151a.368.368 0 0 1-.342.342h-12.443c-.147-.024-.22.074-.22.22Zm-6.747-2.64v12.443c0 1.492-1.736 2.323-2.909 1.345l-10.977-9.314v8.85c0 .244-.195.44-.44.44h-2.762c-.245 0-.465-.196-.465-.44v-12.42c0-1.49 1.736-2.322 2.909-1.344l10.977 9.314v-8.85c0-.244.195-.464.44-.464h2.762c.318 0 .465.22.465.44Zm-34.2 2.64v2.616h7.285a1.418 1.418 0 0 1 0 2.836h-7.261V19.4c0 .489.416.904.905.904h11.758a.35.35 0 0 1 .342.342V22.8a.35.35 0 0 1-.342.342h-12.712a3.626 3.626 0 0 1-3.618-3.618v-8.776c0-1.003.807-1.81 1.809-1.81h14.521a.35.35 0 0 1 .342.343v2.151a.35.35 0 0 1-.342.342h-12.443c-.147-.024-.244.074-.244.22Zm-5.183 8.605v2.152a.35.35 0 0 1-.342.342h-10.219a3.626 3.626 0 0 1-3.618-3.618V9.255a.35.35 0 0 1 .343-.342h3.006a.35.35 0 0 1 .343.342v10.097c0 .489.415.904.904.904h9.241c.22 0 .342.171.342.342ZM102.781 9.255v2.152a.35.35 0 0 1-.343.342h-5.329v12.859a.24.24 0 0 1-.391.195l-2.86-2.445a1.002 1.002 0 0 1-.343-.757v-9.876H90.02a.696.696 0 0 1-.611-.392l-1.1-2.2c-.05-.098.024-.22.17-.22h13.959a.35.35 0 0 1 .343.342Zm-50.604 6.6c.66-.244 2.005-.88 2.005-2.688 0-3.105-2.298-4.254-5.036-4.254h-10.56c-.148 0-.343.147-.343.342V22.75a.35.35 0 0 0 .342.342h11.881c1.736-.024 4.23-1.002 4.23-4.205.024-2.004-1.785-2.835-2.519-3.031ZM41.885 11.97c0-.147.098-.22.22-.22h6.503c.684 0 2.176 0 2.176 1.418s-1.516 1.418-2.176 1.418h-6.723V11.97Zm7.505 8.263h-7.285c-.146 0-.22-.098-.22-.22V17.42h7.53c.733 0 1.907 0 1.907 1.418 0 1.443-1.345 1.394-1.932 1.394ZM86.548 9.255v2.152a.35.35 0 0 1-.342.342h-4.18v12.859a.24.24 0 0 1-.391.195l-2.86-2.445a.99.99 0 0 1-.343-.733v-9.9h-4.547a.696.696 0 0 1-.61-.392l-1.1-2.2c-.025-.098.048-.22.17-.22h13.861c.147 0 .342.147.342.342Z"
+            ></path>
+            <path
+              fill="#148EFF"
+              stroke="none"
+              d="M134.805 16.003c0-.978.782-1.785 1.784-1.785.978 0 1.785.807 1.785 1.785 0 .978-.782 1.785-1.785 1.785a1.778 1.778 0 0 1-1.784-1.785Z"
+            ></path>
+            <path
+              stroke="none"
+              d="M192.975 22.187a1.418 1.418 0 1 1-.003-2.837 1.418 1.418 0 0 1 .003 2.837Zm0-2.613a1.197 1.197 0 1 0-.004 2.398 1.197 1.197 0 0 0 .004-2.4v.002Zm.363 2.014-.5-.673h-.173v.673h-.283v-1.634h.586c.425 0 .611.138.611.46a.443.443 0 0 1-.437.477l.545.693-.349.004Zm-.141-1.376a.67.67 0 0 0-.269-.037h-.263v.542h.263c.251 0 .372-.093.372-.294a.237.237 0 0 0-.103-.212v.002Z"
+            ></path>
+          </svg>
+        </div>
+        <div class="footermenu">
+          <nav>
+            <ul>
+              <li>
+                <a href="#"><i class="fa-regular fa-pipe"></i>CAREERS</a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-regular fa-pipe"></i>ABOUT</a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-regular fa-pipe"></i>SUPPORT</a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-regular fa-pipe"></i>CONTACT US</a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-regular fa-pipe"></i>PREES</a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-regular fa-pipe"></i>API</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="socialMedia">
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-sharp fa-solid fa-x"></i></a>
+        </div>
+        <div class="an">
+          <span>All games, one app:</span
+          ><svg
+            width="14px"
+            height="14px"
+            version="1.1"
+            id="Layer_1"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            x="0px"
+            y="0px"
+            viewBox="0 0 24.8 24.6"
+            enable-background="new 0 0 24.8 24.6"
+            xml:space="preserve"
+          >
+            <path
+              fill="#148EFF"
+              d="M20.6,8.9C21.3,6.6,21.5,4.6,21,3V2.9c-0.1-0.1-0.1-0.3-0.2-0.3c-0.1,0-0.1,0.1-0.1,0.2c0,0,0,0,0,0.1
+           c0.2,1.4-0.3,3.4-1.1,5.5c-1.7-0.8-3.8-1.4-6.1-1.8c-2.1-0.3-4-0.4-5.8-0.3c0.2-1.4,0.8-2.5,1.6-2.6c1.2-0.3,2.5,0.5,3.7,2
+           c0.2,0.1,0.4,0.1,0.7,0.1c0.6,0.1,1.2,0.2,1.8,0.4c-2.2-4.4-5.3-6.8-7.6-5.9C6.1,0.8,5.3,3.3,5.4,6.6C3.1,7.1,1.3,8,0.2,9.3
+           c0,0,0,0-0.1,0.1S0,9.5,0,9.6c0.1,0.1,0.2,0,0.2-0.1c0,0,0,0,0.1,0c1.1-0.8,3-1.5,5.2-1.7c0.2,1.9,0.7,4,1.5,6.3
+           c0.8,2,1.7,3.8,2.7,5.3C8.3,20,7.2,20,6.6,19.3c-0.8-0.9-0.8-2.5-0.2-4.3c-0.1-0.2-0.2-0.4-0.2-0.6c-0.2-0.6-0.4-1.2-0.6-1.7
+           c-2.6,4.2-3.1,8-1.2,9.6c1.5,1.2,4,0.8,6.7-1c1.6,1.7,3.2,2.9,4.8,3.3h0.1c0.1,0,0.3,0.1,0.3-0.1c0.1-0.1-0.1-0.1-0.1-0.2
+           c0,0,0,0-0.1,0c-1.3-0.5-2.7-1.9-4.1-3.7c1.5-1.1,3.1-2.6,4.6-4.5c1.3-1.6,2.4-3.3,3.1-5c1.1,0.9,1.7,1.9,1.4,2.7
+           c-0.3,1.2-1.7,2-3.5,2.3c-0.1,0.2-0.3,0.3-0.4,0.5c-0.4,0.5-0.8,1-1.2,1.4c4.8,0.2,8.4-1.3,8.7-3.8C25.2,12.4,23.5,10.4,20.6,8.9z
+            M16.5,13.8c-1.7,2.1-3.8,3.9-5.7,5c-0.7-1.1-1.3-2.4-1.8-3.7C8,12.5,7.6,9.8,7.6,7.6c1.3-0.1,2.7,0.1,4,0.3
+           c2.6,0.4,5.2,1.4,7.1,2.5C18.1,11.5,17.3,12.8,16.5,13.8L16.5,13.8z"
+            />
+          </svg>
+          <a href="#">Battle.net Desktop App</a>
+        </div>
+        <div class="aq">
+          <p>©2023 Blizzard Entertainment, Inc.</p>
+          <span
+            >All &nbsp;<a href="#">trademarks</a>&nbsp;referenced herein are the
+            properties of their respective owners.</span
+          >
+          <nav>
+            <ul>
+              <li><a href="#">PREVACI</a></li>
+              <li><a href="#">LEGAL</a></li>
+              <li><a href="#">TERMS</a></li>
+              <li><a href="#">COOKIE POLICY</a></li>
+              <li><a href="#">COOKIE SETTING</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="ax">
+          <a href="#"><img src="./images/footer/esrb.avif" alt="" /></a>
+          <a href="#"><img src="./images/footer/rp-m.0zopI.png" alt="" /></a>
+        </div>
+      </div>
+    </div>
+
+    <script src="./node_modules/swiper/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: {
+          delay: 3500,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+    <script>
+      var swiper = new Swiper(".mySlides", {
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>

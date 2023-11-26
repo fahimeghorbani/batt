@@ -1,0 +1,26 @@
+{
+  "name": "battle.js",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "scss": "node-sass -w public/scss -o public/css -r",
+    "xxl": "node-sass -w public/scss/xxl -o public/css/xxl -r",
+    "xl": "node-sass -w public/scss/xl -o public/css/xl -r",
+    "lg": "node-sass -w public/scss/lg -o public/css/lg -r",
+    "md": "node-sass -w public/scss/md -o public/css/md -r",
+    "sm": "node-sass -w public/scss/sm -o public/css/sm -r",
+    "server": "json-server -w db.json --port 3006"
+  },
+  "devDependencies": {
+    "vite": "^4.4.5"
+  },
+  "dependencies": {
+    "json-server": "^0.17.4",
+    "node-sass": "^9.0.0",
+    "swiper": "^11.0.4"
+  }
+}

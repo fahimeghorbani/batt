@@ -1,0 +1,114 @@
+.footer{
+    width: 100%;
+    height: auto;
+    background-color: #15171e;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+  }
+  .footer .t1{
+    display: flex;
+    gap: 5px;
+    padding-top: 100px;
+    box-sizing: border-box;
+    justify-content: center;
+
+  }
+  .footer .t1 p{
+    color: hsla(0,0%,100%,.7);
+    font-family: yekan;
+
+  }
+  .ak a{
+    color: rgb(0, 116, 224);
+
+  }
+  .am{
+    width: 30%;
+    color: whitesmoke;
+    margin: 30px auto;
+  }
+ .footermenu nav ul{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  gap: 20px;
+ }
+ .footermenu nav ul li{
+  list-style: none;
+ }
+ .footermenu nav ul li a{
+  color: hsla(0,0%,100%,.7) ;
+  text-decoration: none;
+  font-family: yekan;
+  font-size: 14px;
+ }
+ .footermenu nav ul li a i{
+  color: yellow ;
+
+ }
+ .socialMedia{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  gap: 30px;
+ }
+ .socialMedia a i{
+  color: rgba(255, 255, 255, 0.6);
+  padding-top: 25px;
+  box-sizing: border-box;
+  font-size: 30px;
+ }
+ .an{
+  margin:50px auto;
+ }
+ .an span{
+  color: hsla(0,0%,100%,.7);
+  font-family: yekan;
+  font-size: 14px;
+  padding-right: 5px;
+  box-sizing: border-box;
+
+ }
+ .an a{
+  color: #148EFF;
+  font-family: yekan;
+  padding-left: 3px;
+  padding-top: 5px;
+  box-sizing: border-box;
+ }
+ .aq{
+  text-align: center;
+ }
+ .aq p , span{
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.3);
+  font-family: yekan;
+ }
+ .aq span a{
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.7);
+  font-weight: bold;
+ }
+ .aq nav ul{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 5px;
+ }
+ .aq nav ul li{
+  list-style: none;
+ }
+ .aq nav ul li a{
+  color: rgba(255, 255, 255, 0.7);
+  text-decoration: none;
+  font-family: yekan;
+  font-size: 10px;
+ }
+ .ax{
+  margin: 40px auto;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+ }
